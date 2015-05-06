@@ -1,0 +1,7 @@
+#Thu May 07 00:30:09 CEST 2015
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.1311187735/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.1311187735/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.1311187735/PATH/value=C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C\:\\Program Files\\MiKTeX 2.8\\miktex\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;C\:\\PROGRA~1\\COMMON~1\\ULEADS~1\\MPEG;C\:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C\:\\MATLAB7\\bin\\win32;C\:\\Program Files\\QuickTime\\QTSystem\\;%CDSROOT%\\tools\\bin;%CDSROOT%\\tools\\libutil\\bin;%CDSROOT%\\tools\\fet\\bin;%CDSROOT%\\tools\\pcb\\bin;%CDSROOT%\\tools\\specctra\\bin;%CDSROOT%\\tools\\PSpice;%CDSROOT%\\tools\\PSpice\\Library;%CDSROOT%\\tools\\Capture;%CDSROOT%\\OpenAccess\\bin\\win32\\opt;C\:\\Program Files\\Windows Live\\Shared;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files\\Cppcheck\\;C\:\\Program Files\\bcc55\\bin;C\:\\Borland\\BCC55\\bin;C\:\\Borland\\BCC55\\bin;C\:\\Program Files\\GTK2-Runtime\\bin;C\:\\Program Files\\mingw-w64\\i686-4.9.2-posix-dwarf-rt_v4-rev2\\mingw32\\bin;c\:\\msys\\1.0\\bin;C\:\\cxxtest-4.3;C\:\\Program Files\\Java\\jre1.8.0_45\\bin
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.1311187735/append=true
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.1311187735/appendContributed=true
