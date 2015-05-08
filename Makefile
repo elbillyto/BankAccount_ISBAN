@@ -1,3 +1,10 @@
+UNAME = $(uname)
+ifeq ($(UNAME), Linux)
+MD = mkdir -p
+else
+MD = mkdir
+endif
+
 #ver http://www.gnu.org/software/make/manual/make.html#Automatic-Variables
 CC=g++
 #CFLAGS=-Wall -g -std=c++11
@@ -19,12 +26,12 @@ OBJECTS  = $(DIROBJ)/main.o $(DIROBJ)/BankAccount.o
 DEPS  = $(DIROBJ)/BankAccount.o
 PROGRAMS = main.exe runnerTest.exe
 
-#@echo "Building"
 
 main.exe: $(OBJECTS)
 	$(CC) -o $@ $^
 
 $(DIROBJ)/%.o: $(DIRSRC)/%.cpp
+	if not exist "$(DIROBJ)" $(MD) "$(DIROBJ)"
 	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 runnerTest.exe: $(DIRTEST)/BankAccountTestSuite.cpp $(DEPS)
