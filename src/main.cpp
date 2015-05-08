@@ -11,7 +11,7 @@
 using namespace std;
 
 int main() {
-	cout << "Hello World! from BankAccount_ISBAN.exe" << endl; // prints !!!message in a bottle!!!
+    cout << "Hello World! from BankAccount_ISBAN.exe" << endl; // prints !!!message in a bottle!!!
     // Start Joe out poor, with $0.00.
     BankAccount account( "Joe Hokie" );
 
@@ -21,7 +21,7 @@ int main() {
 
     // Have Joe deposit a little more, and verify.
     account.deposit( 100 );
-    cout << account.getBalance()<< " €" << endl; // 1
+    cout << account.getBalance()<< " € "<< endl; // 1
 
-	return 0;
+    return 0;
 }

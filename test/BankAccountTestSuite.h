@@ -7,6 +7,34 @@
 
 class BankAccountTestSuite: public CxxTest::TestSuite {
 public:
+	void testBankAccount() {
+		// TODO: Implement testBankAccount() function.
+		// An account initialized with a name only should start
+		// empty.
+		BankAccount emptyAccount("Empty Account");
+		TS_ASSERT_EQUALS(emptyAccount.getBalance(), 0);
+
+		// An account initialized with a balance should obviously
+		// have that balance.
+		BankAccount nonemptyAccount("Nonempty Account", 12345);
+		TS_ASSERT_EQUALS(nonemptyAccount.getBalance(), 12345);		
+	}
+
+	void testGetBalance() {
+		// TODO: Implement testGetBalance() function.
+	}
+
+	void testIsOverdrawn() {
+		// TODO: Implement testIsOverdrawn() function.
+	}
+
+	void testDeposit() {
+		// TODO: Implement testDeposit() function.
+	}
+
+	void testWithdraw() {
+		// TODO: Implement testWithdraw() function.
+	}
 	void testInitialBalances() {
 		// An account initialized with a name only should start
 		// empty.
@@ -93,25 +121,6 @@ public:
 	        // To my knowledge, 5 + 7 != 13.
 	        TS_ASSERT_EQUALS( account.getBalance(), 13 );
 	    }
-	void testBankAccount() {
-		// TODO: Implement testBankAccount() function.
-	}
-
-	void testGetBalance() {
-		// TODO: Implement testGetBalance() function.
-	}
-
-	void testIsOverdrawn() {
-		// TODO: Implement testIsOverdrawn() function.
-	}
-
-	void testDeposit() {
-		// TODO: Implement testDeposit() function.
-	}
-
-	void testWithdraw() {
-		// TODO: Implement testWithdraw() function.
-	}
 
 };
 
