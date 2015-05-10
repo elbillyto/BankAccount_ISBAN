@@ -1,7 +1,11 @@
 ifeq ($(shell uname) , Linux)
 	MD = mkdir -p
+	INCLUDESCXXTEST = -I "/opt/cxxtest-4.4"
+	PATHCXXTESTGEN= /opt/cxxtest-4.4/bin/cxxtestgen
 else
 	MD = mkdir
+	INCLUDESCXXTEST = -I "C:/DATOS/D/cxxtest-4.4"
+	PATHCXXTESTGEN= C:/DATOS/D/cxxtest-4.4/bin/cxxtestgen
 endif
 #ver http://www.gnu.org/software/make/manual/make.html#Automatic-Variables
 CC=g++
@@ -11,8 +15,6 @@ CFLAGS=-Wall -g
 # define any directories containing header files other than /usr/include
 #
 INCLUDE = -I "./include"
-INCLUDESCXXTEST = -I "C:/DATOS/D/cxxtest-4.4"
-PATHCXXTESTGEN= C:/DATOS/D/cxxtest-4.4/bin/cxxtestgen
 #DIR1=../include
 #DIR2=D:/cxxtest-4.4
 #INC=$(DIR1) $(DIR2) ...
