@@ -14,7 +14,7 @@
 ## What is this repository for? ##
 
 * Learn cross platform Makefiles
-* [Learn cxxtest] (http://cxxtest.com/))
+* [Learn cxxtest] (http://cxxtest.com/)
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ## How do I get set up? ##
