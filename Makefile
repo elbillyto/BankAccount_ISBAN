@@ -1,10 +1,8 @@
-UNAME = $(uname)
-ifeq ($(UNAME), Linux)
-MD = mkdir -p
+ifeq ($(shell uname) , Linux)
+	MD = mkdir -p
 else
-MD = mkdir
+	MD = mkdir
 endif
-
 #ver http://www.gnu.org/software/make/manual/make.html#Automatic-Variables
 CC=g++
 #CFLAGS=-Wall -g -std=c++11
@@ -21,6 +19,7 @@ PATHCXXTESTGEN= C:/DATOS/D/cxxtest-4.4/bin/cxxtestgen
 #INC_PARAMS=$(foreach d, $(INC), -I$d)
 DIRSRC = src
 DIROBJ = Debug/src
+
 DIRTEST = test
 OBJECTS  = $(DIROBJ)/main.o $(DIROBJ)/BankAccount.o
 DEPS  = $(DIROBJ)/BankAccount.o
@@ -30,8 +29,8 @@ PROGRAMS = main.exe runnerTest.exe
 main.exe: $(OBJECTS)
 	$(CC) -o $@ $^
 
-$(DIROBJ)/%.o: $(DIRSRC)/%.cpp
-	if not exist "$(DIROBJ)" $(MD) "$(DIROBJ)"
+$(DIROBJ)/%.o: $(DIRSRC)/%.cpp	
+	$(MD) "$(DIROBJ)"
 	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 runnerTest.exe: $(DIRTEST)/BankAccountTestSuite.cpp $(DEPS)
