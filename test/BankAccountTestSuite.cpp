@@ -20,7 +20,7 @@ int main( int argc, char *argv[] ) {
     return status;
 }
 bool suite_BankAccountTestSuite_init = false;
-#include "C:\Users\xIS07362\git\BankAccount_ISBAN\test\BankAccountTestSuite.h"
+#include "/home/elbillyto/workspace_git/BankAccount_ISBAN/test/BankAccountTestSuite.h"
 
 static BankAccountTestSuite suite_BankAccountTestSuite;
 
